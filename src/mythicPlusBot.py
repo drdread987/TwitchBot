@@ -193,6 +193,22 @@ while True:
                             string = "There is currently no key in the list to do"
                         send_message(string)
 
+                    elif message[:7].lower() == "remove-" and username == admin:
+                        try:
+                            spot = int(message[7])
+                            string = "The key " + key_list[spot-1][1] + " from " + key_list[spot-1][0] + " was removed."
+                            del key_list[spot-1]
+                            send_message(string)
+
+                        except:
+                            string = "Something was off with that remove command"
+                            send_message(string)
+
+                    elif message[:5].lower() == "clear" and username == admin:
+                        key_list = []
+                        string = "The key list has been cleared"
+                        send_message(string)
+
                     elif message[:8].lower() == "commands":
                         string = "To add a key just use the three letter abbreviation for the dungeon" \
                                  " add a + then add your difficulty example being !key brh+11, the dungeon " \
