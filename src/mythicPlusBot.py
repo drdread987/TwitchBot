@@ -5,7 +5,7 @@ HOST = "irc.twitch.tv"
 PORT = 6667
 NICK = "MythicPlus_BOT"
 PASS = "oauth:rf981oujagec7cqhroplu0fdhk4x6s"
-CHAN = "zatcharygaming"
+CHAN = "tcgdrdread987"
 readbuffer = ""
 
 # stores [[username, key], ...]
@@ -13,7 +13,7 @@ key_list = []
 
 dungeons = ["brh", "cos", "dht", "eoa", "hov", "mos", "nlt", "arc", "vow"]
 
-admin = "zatcharygaming"
+admin = "tcgdrdread987"
 
 
 s = socket.socket()
